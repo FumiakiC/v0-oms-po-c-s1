@@ -2,13 +2,5 @@
   "name": "my-v0-project",
   "compatibility_date": "2024-12-18",
   "compatibility_flags": ["nodejs_compat"],
-  "pages_build_output_dir": ".vercel/output/static",
-  // もし Worker としてデプロイ ("npx wrangler deploy") したい場合は以下も必要ですが、
-  // 通常 Next.js は Pages ("npx wrangler pages deploy") が推奨です。
-  // 以下は Worker 形式でデプロイする場合の設定です:
-  "main": ".vercel/output/static/_worker.js",
-  "assets": {
-    "directory": ".vercel/output/static",
-    "binding": "ASSETS"
-  }
+  "pages_build_output_dir": ".vercel/output/static"
 }
