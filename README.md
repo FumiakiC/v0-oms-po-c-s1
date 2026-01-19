@@ -2,20 +2,20 @@
 
 このリポジトリは、**「注文管理システム（OMS）実証導入計画」** のプレゼンテーション用Webアプリケーションです。
 
-現在は、リポジトリ所有者の**Kubernetes (k8s)** および **CI/CD パイプライン** 構築の技術検証・学習用環境として運用されています。
+現在は **Cloudflare Pages** にデプロイされ稼働しています。本プロジェクトは、AIを活用した開発フローとモダンなホスティング環境の技術検証・学習用環境として運用されています。
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Practice-326ce5)
+![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-Deployed-F38020?logo=cloudflare&logoColor=white)
+![v0.app](https://img.shields.io/badge/AI-v0.app-black)
 
 ## 🎯 このリポジトリの目的 (Goal)
 
-このプロジェクトの主な目的は、モダンなフロントエンドアプリケーションを対象とした、**コンテナオーケストレーションと自動デプロイフローの習得**です。
+このプロジェクトの主な目的は、**v0.app** と **Cloudflare Pages** を活用した、AI時代のモダンなWebアプリケーション開発フローの習得・実践です。
 
-- **Docker化**: Next.js アプリケーションのコンテナイメージ作成と最適化（マルチステージビルド等）
-- **Kubernetes (k8s)**: マニフェスト（Deployment, Service, Ingress）の作成とクラスタへの展開
-- **CI/CD**: GitHub Actions を用いたテスト・ビルド・デプロイの自動化
-- **GitOps**: ArgoCD 等を用いた宣言的なインフラ管理（Option）
+- **v0.app の活用**: 生成AIを用いた迅速なUIプロトタイピングと、実用的なコードへの落とし込みの練習
+- **Cloudflare Pages**: エッジネットワークを活用した高速なデプロイと、ホスティング環境の設定・運用
+- **Development Workflow**: AIツール（v0）とモダンなインフラ（Cloudflare）を組み合わせた、効率的な個人開発サイクルの確立
 
 ## 📦 アプリケーション概要 (App Overview)
 
@@ -30,15 +30,16 @@
 ### 技術スタック (Tech Stack)
 v0.app ベースのモダンな構成を採用しています。
 
+- **GenAI Tool**: v0.app (UI Generation)
+- **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **UI Components**: [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
-- **Animation**: [Framer Motion](https://www.framer.com/motion/)
 
 ## 🚀 ローカルでの実行方法 (Local Development)
 
-インフラ構築の前に、アプリケーションをローカルで動作確認する手順です。
+アプリケーションをローカルで動作確認する手順です。
 
 ```bash
 # 1. リポジトリのクローン
